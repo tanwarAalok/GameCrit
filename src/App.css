@@ -1,0 +1,242 @@
+@import "react-slideshow-image/dist/styles.css";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: white;
+}
+
+
+
+.app{
+  background-color: #1F2125;
+  height: 100vh;
+  width: 100vw;
+}
+
+body{
+  background-color: #1F2125;
+}
+
+a{
+  color: white;
+}
+
+/* -------------------------Navigation------------------------------------------------------------------------- */
+.app .navbar{
+  display: flex;
+  height: 50px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #0E0D13;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: fixed;
+  z-index: 1;
+}
+
+.app .navbar .nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  width: 600px;
+}
+.app .navbar .title{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.app .navbar li{
+  list-style: none;
+}
+
+.app .navbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* ------------------------------------------------------ */
+.home{
+  background-color: black;
+}
+.front{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://cdn.discordapp.com/attachments/840237326700904451/892287786282024981/1149777.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.category{
+  color: white;
+  text-align: center;
+}
+
+.card{
+  padding-top: 50px;
+  display: flex;
+  height: 1000px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* **************************************************************************************** */
+.game{
+  height: 400px;
+  width: 300px;
+  background-color: #206cb8da;
+  margin: 15px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.game .image{
+  width: 100%;
+  height: 85%;
+}
+.game .image img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.games{
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #1F2125;
+  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  font-size: 1.2rem;
+}
+/* ****************************************************************** */
+.details{
+  width: 100vw;
+  padding-top: 51px;
+  padding-bottom: 50px;
+  color: white;
+  margin-bottom: 50px;
+}
+.slideshow{
+  height: 500px;
+  width: 99vw;
+  background-color: grey;
+}
+.slideshow div{
+  height: 100%;
+  width: 100%;
+}
+
+.slideshow div div img{
+  height: 100%;
+  width: 100%;
+}
+
+.details .row{
+  display: flex;
+  width: 100vw;
+  height: 450px;
+}
+
+.gameDetail{
+  height: 400px;
+  width: 300px;
+  margin-top: 15px;
+  margin-left: 50px;
+  box-shadow: none;
+}
+
+.gameDetail .image{
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(66, 66, 66, 0.17) 0px -23px 25px 0px inset, rgba(99, 97, 97, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.gameDetail .image img{
+  width: 98%;
+  height: 98%;  
+  border-radius: 10px;
+}
+
+.gameSpecs{
+  width: 70%;
+  margin-top: 15px;
+  margin-left: 40px;
+  padding: 20px;
+}
+
+.divider{
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.582);
+}
+
+.gameSpecs li{
+  margin: 5px;
+}
+.gameSpecs span{
+  opacity: 0.9;
+  font-size: 1.3rem;
+}
+
+.gameSpecs .feature{
+  float: left;
+  font-size: 1.2rem;
+}
+.gameSpecs .system{
+  float: right;
+  font-size: 1.2rem;
+}
+
+.gameDes{
+  width: 92.2%;
+  font-size: 1.2rem;
+  margin-left: 3.5%;
+}
+
+/* ********************************************************************************************** */
+
+.footer{
+  width: 100vw;
+  background-color: #0E0D13;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: sticky;
+  bottom: 0;
+}
+.footer svg{
+  padding-top: 5px;
+}
+.footer .fade{
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
