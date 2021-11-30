@@ -69,45 +69,47 @@ const GameDetails = () => {
                 <br />
                 <br />
 
-                <div className="feature">
-                  <ul>
-                    <li>
-                      <span>Genre:</span> {game.genre}
-                    </li>
-                    <li>
-                      <span>Publisher:</span> {game.publisher}
-                    </li>
-                    <li>
-                      <span>Developer:</span> {game.developer}
-                    </li>
-                    <li>
-                      <span>Release Date:</span> {game.release_date}
-                    </li>
-                  </ul>
-                </div>
-                <div className="system">
-                  <ul>
-                    <li>
-                      <span>OS: </span>
-                      {game.minimum_system_requirements.os}
-                    </li>
-                    <li>
-                      <span>Processor: </span>
-                      {game.minimum_system_requirements.processor}
-                    </li>
-                    <li>
-                      <span>Memory: </span>
-                      {game.minimum_system_requirements.memory}
-                    </li>
-                    <li>
-                      <span>Graphics</span>
-                      {game.minimum_system_requirements.graphics}
-                    </li>
-                    <li>
-                      <span>Storage: </span>
-                      {game.minimum_system_requirements.storage}
-                    </li>
-                  </ul>
+                <div className="osr">
+                  <div className="feature">
+                    <ul>
+                      <li>
+                        <span>Genre:</span> {game.genre}
+                      </li>
+                      <li>
+                        <span>Publisher:</span> {game.publisher}
+                      </li>
+                      <li>
+                        <span>Developer:</span> {game.developer}
+                      </li>
+                      <li>
+                        <span>Release Date:</span> {game.release_date}
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="system">
+                    <ul>
+                      <li>
+                        <span>OS: </span>
+                        {game.minimum_system_requirements.os}
+                      </li>
+                      <li>
+                        <span>Processor: </span>
+                        {game.minimum_system_requirements.processor}
+                      </li>
+                      <li>
+                        <span>Memory: </span>
+                        {game.minimum_system_requirements.memory}
+                      </li>
+                      <li>
+                        <span>Graphics</span>
+                        {game.minimum_system_requirements.graphics}
+                      </li>
+                      <li>
+                        <span>Storage: </span>
+                        {game.minimum_system_requirements.storage}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

@@ -36,11 +36,18 @@ const GameData = () => {
       fetchGames();
     }, []);
 
-    return (
-        <div className="games">
-            <GameProduct/>
-        </div>
-    )
+  return (
+    <div>
+      <div className="heading">
+        <h2>All Games</h2>
+      </div>
+      <div className="dividerCat"></div>
+
+      <div className="games">
+        <GameProduct />
+      </div>
+    </div>
+  );
 }
 
 export default GameData;

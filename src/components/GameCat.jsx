@@ -40,8 +40,15 @@ const GameCat = () => {
     }, [gameCat]);
 
     return (
-      <div className="games">
-        <CatProduct />
+      <div>
+        <div className="heading">
+          <h2 style={{textTransform: "capitalize"}}>{gameCat} Games</h2>
+        </div>
+        <div className="dividerCat"></div>
+
+        <div className="games">
+          <CatProduct />
+        </div>
       </div>
     );
 }

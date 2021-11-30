@@ -24,18 +24,26 @@ a{
   color: white;
 }
 
-/* -------------------------Navigation------------------------------------------------------------------------- */
+/* *******************************************  NAVIGATION ********************************************* */
+#logoImg{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+}
 .app .navbar{
   display: flex;
   height: 50px;
   width: 100vw;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   color: white;
-  background-color: #0E0D13;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  position: fixed;
-  z-index: 1;
+  background-color: transparent;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  position: absolute;
+  z-index: 2;
+  margin-top: 15px;
 }
 
 .app .navbar .nav{
@@ -43,7 +51,7 @@ a{
   justify-content: space-evenly;
   align-items: center;
   height: 50px;
-  width: 600px;
+  width: 500px;
 }
 .app .navbar .title{
   height: 50px;
@@ -52,27 +60,59 @@ a{
   align-items: center;
   width: 200px;
 }
+.navbar .title a{
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
 .app .navbar li{
   list-style: none;
 }
 
-.app .navbar a{
+.app .navbar .nav a{
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-/* ------------------------------------------------------ */
+/* **************************************** FRONT PAGE ************************************************ */
+
 .home{
-  background-color: black;
+  background-color: #0B0A0A;
 }
 .front{
+  position: relative;
+  top: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('https://cdn.discordapp.com/attachments/840237326700904451/892287786282024981/1149777.jpg');
+  /* background-image: url('https://cdn.discordapp.com/attachments/840237326700904451/892287786282024981/1149777.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
+}
+.front .slideshow{
+  height: 100%;
+  width: 99%;
+}
+
+.dividerCat{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  height: 3px;
+  background-color: #ccc8c8;
+  /* margin-bottom: 20px; */
+}
+
+.heading h2{
+  text-align: center;
+  /* margin-bottom: 10px; */
+  margin-top: 40px;
+  font-size: 2rem;
 }
 
 .category{
@@ -84,19 +124,19 @@ a{
   padding-top: 50px;
   display: flex;
   height: 1000px;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-/* **************************************************************************************** */
+/* ******************************************** GAME PRODUCT CARD ******************************************** */
 .game{
   height: 400px;
   width: 300px;
-  background-color: #206cb8da;
+  background-color: rgb(35, 38, 38);
   margin: 15px;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -127,20 +167,28 @@ a{
   padding-bottom: 80px;
 }
 
-.title{
+.game .title{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 15%;
-  font-size: 1.2rem;
+  width: 100%;
+  font-size: 1.1rem;
+  flex-wrap: nowrap;
+  padding-right: 5px;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  
 }
-/* ****************************************************************** */
+
+/* ************************************  >> GAME DETAILS << ****************************** */
 .details{
   width: 100vw;
-  padding-top: 51px;
+  /* padding-top: 51px; */
   padding-bottom: 50px;
   color: white;
   margin-bottom: 50px;
+
 }
 .slideshow{
   height: 500px;
@@ -160,7 +208,7 @@ a{
 .details .row{
   display: flex;
   width: 100vw;
-  height: 450px;
+  margin-bottom: 20px;
 }
 
 .gameDetail{
@@ -204,13 +252,11 @@ a{
   font-size: 1.3rem;
 }
 
-.gameSpecs .feature{
-  float: left;
+.gameSpecs .osr{
+  width: 100%;
+  display: flex;
   font-size: 1.2rem;
-}
-.gameSpecs .system{
-  float: right;
-  font-size: 1.2rem;
+  justify-content: space-between;
 }
 
 .gameDes{
@@ -219,7 +265,7 @@ a{
   margin-left: 3.5%;
 }
 
-/* ********************************************************************************************** */
+/* ****************************************** FOOTER **************************************************** */
 
 .footer{
   width: 100vw;
@@ -230,8 +276,8 @@ a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: sticky;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
 }
 .footer svg{
   padding-top: 5px;
