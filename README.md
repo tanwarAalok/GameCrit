@@ -1,6 +1,6 @@
-## Game Review Website
+# Game Review Website
 
-# TechStack : 
+## TechStack : 
 
 <li> React JS </li>
 
